@@ -6,7 +6,7 @@
 		   05	   3	ROR		Simulate a ROL	N	0	N
 		   06	   6	ADDI	C	Add a two's compliment -4	N	1	N
 		   07	   C				Y	0	N
-		   08	   4	OUT	0	Output the value to the first output port	N	1	N
+		   08	   4	OUT	2	Output the value to the third output port	N	1	N
 		   09	   0				Y	0	N
 	END	   0A	   9	JMP	END	End in an infinite loop	N	2	N
 		   0B	   A				Y	0	N
