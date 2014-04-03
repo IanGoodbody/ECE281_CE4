@@ -4,20 +4,20 @@
 		   03	   3	ROR		Double value	N	0	N
 		   04	   3	ROR		Rotate Right three times	N	0	N
 		   05	   3	ROR		Simulate a ROL	N	0	N
-		   06	   D	STA	Addr2	Store value a temporary memory adress	N	2	N
-		   07	   1				Y	0	N
-		   08	   B				Y	0	N
-		   09	   7	LDAI	4	Load 4	N	1	N
-		   0A	   4				Y	0	N
-		   0B	   1	NEG		Negate it for subtraction	N	0	N
-		   0C	   E	ADDD	Addr2	Add the stored value to the -4 in the register	N	2	N
-		   0D	   1				Y	0	N
-		   0E	   B				Y	0	N
-		   0F	   4	OUT	0	Output the new value to the leftmost output port	N	1	N
-		   10	   0				Y	0	N
-	END	   11	   9	JMP	END		N	2	N
-		   12	   1				Y	0	N
-		   13	   1				Y	0	N
+		   06	   6	ADDI	C	Add a two's compliment -4	N	1	N
+		   07	   C				Y	0	N
+		   08	   4	OUT	0	Output the value to the first output port	N	1	N
+		   09	   0				Y	0	N
+	END	   0A	   9	JMP	END	End in an infinite loop	N	2	N
+		   0B	   A				Y	0	N
+		   0C	   0				Y	0	N
+		   0D	   0	NOP			N	0	N
+		   0E	   0	NOP			N	0	N
+		   0F	   0	NOP			N	0	N
+		   10	   0	NOP			N	0	N
+		   11	   0	NOP			N	0	N
+		   12	   0	NOP			N	0	N
+		   13	   0	NOP			N	0	N
 		   14	   0	NOP			N	0	N
 		   15	   0	NOP			N	0	N
 		   16	   0	NOP			N	0	N
@@ -174,8 +174,8 @@
 		   AD	   0	NOP			N	0	N
 		   AE	   0	NOP			N	0	N
 		   AF	   0	NOP			N	0	N
-	Addr1	   B0	   4	
-	Addr2	   B1	   8	
+	Addr1	   B0	   3	
+		   B1	   8	
 		   B2	   0	
 		   B3	   0	
 		   B4	   0	
